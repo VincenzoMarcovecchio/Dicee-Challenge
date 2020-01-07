@@ -12,6 +12,7 @@
 
 body {
   background-color: #393E46;
+  position:relative;
 }
 
 h1 {
@@ -26,8 +27,12 @@ h4 {
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #4ECCA3;
+  position:absolute;
+  top:0;
+  left:0;
+  transform:rotate(-29deg);
 }
 
 p {
