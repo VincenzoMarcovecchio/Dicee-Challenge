@@ -1,8 +1,5 @@
-let title = document.querySelector("h1").innertext = "Refresh me!";
+let title = document.querySelector("h1");
 
-document.addEventListener('load', function() {
-  title.innerHTML = "Refresh me!";
-});
 
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
