@@ -1,6 +1,6 @@
 
 
- let header = document.querySelector("h1").innerHTML = "Refresh me!";
+ let header = document.querySelector("h1").innerText = "Refresh me!";
 
 
 
@@ -21,9 +21,9 @@ var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 if (randomNumber1 > randomNumber2) {
-  header.innerHTML = "🚩 Player 1 Wins!";
+  header.innerText = "🚩 Player 1 Wins!";
 } else if (randomNumber2 > randomNumber1) {
-  header.innerHTML = "🚩 Player 2 Wins!";
+  header.innerText = "🚩 Player 2 Wins!";
 } else {
-  header.innerHTML = "Draw!";
+  header.innerText = "Draw!";
 }
