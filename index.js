@@ -1,6 +1,6 @@
 
 
- let header = document.querySelector("h1").innerText = "";
+ let header = document.querySelector("h1");
 
 
 
