@@ -1,6 +1,6 @@
 
 
- let header = document.querySelector("h1").innerText = "Refresh me!";
+ let header = document.querySelector("h1").innerText = "";
 
 
 
