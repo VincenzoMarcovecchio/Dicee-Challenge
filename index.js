@@ -1,29 +1,15 @@
+var randomNumber1 = Math.floor((Math.random() * 6 + 1));
+var randomNumber2 = Math.floor((Math.random() * 6 + 1));
 
+// Change dice images
+document.getElementsByClassName("img1")[0].setAttribute("src", "images/dice" + randomNumber1 + ".png");
+document.getElementsByClassName("img2")[0].setAttribute("src", "images/dice" + randomNumber2 + ".png");
 
- let header = document.querySelectorAll("h1");
-
-
-
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-
-var randomDiceImage = "dice" + randomNumber1 + ".png";
-
-var randomImageSource = "images/" + randomDiceImage;
-
-var image1 = document.querySelectorAll("img")[0];
-
-image1.setAttribute("src", randomImageSource);
-
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-
-var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
-
-document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
-
-if (randomNumber1 > randomNumber2) {
-  header.innerText = "🚩 Player 1 Wins!";
-} else if (randomNumber2 > randomNumber1) {
-  header.innerText = "🚩 Player 2 Wins!";
+// Change title
+if (randomNumber1 === randomNumber2) {
+  document.querySelector("h1").innerHTML = "Draw";
+} else if (randomNumber1 > randomNumber2){
+  document.querySelector("h1").innerHTML = "🚩 Player 1 Wins";
 } else {
-  header.innerText = "Draw!";
+  document.querySelector("h1").innerHTML = "Player 2 Wins 🚩";
 }
