@@ -12,27 +12,14 @@
 
 body {
   background-color: #393E46;
-  position:relative;
 }
 
 h1 {
-  margin: 30px auto 10px;
+  margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
   color: #4ECCA3;
-}
-
-h4 {
-  margin: 30px;
-  font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
-  font-size: 2rem;
-  color: #4ECCA3;
-  position:absolute;
-  top:0;
-  left:0;
-  transform:rotate(-29deg);
 }
 
 p {
